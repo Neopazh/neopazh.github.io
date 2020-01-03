@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "lemon-bold";
+    src: url("/fonts/lemon_milk/LemonMilk.otf");
+}
+
+@font-face {
+    font-family: "lemon-light";
+    src: url("/fonts/lemon_milk/LemonMilklight.otf");
+}
+
+html,
+body {
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+section {
+    height: 100vh;
+}
+
+.main .main-container {
+    padding-top: 10rem;
+    /* border: 2px solid black; */
+    margin: auto;
+}
+
+.main .main-container .text {
+    padding: 4rem 0 0 0;
+    text-align: center;
+}
+
+.main .main-container .title-text {
+    font-family: "lemon-bold", cursive;
+}
+
+.main .main-container .sub-text {
+    font-family: "lemon-light", cursive;
+}
+
+.main .main-container .soc-icon {
+    margin: auto;
+    /* border: 2px solid black; */
+}
+
+.main .main-container .soc-icon .soc {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+a.links {
+    /* border: 2px solid black; */
+    padding-left: 10px;
+    text-decoration: none !important;
+    color: black;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+}
+
+.day {
+    border-top: 1px solid violet;
+    border-left: solid 1px violet;
+    text-align: center;
+}
+
+
+.done {
+    text-decoration: line-through;
+}
